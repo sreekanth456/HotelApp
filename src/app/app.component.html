@@ -1,0 +1,34 @@
+
+<mat-sidenav-container>
+  
+  
+    <mat-sidenav #sidenav>
+      <!--     Side nav tab content heare -->
+  
+
+      <app-sidenav-list (closeSidenavbar)="sidenav.close()"></app-sidenav-list>
+  
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <!--     Header will go heare  -->
+  
+      <app-header (sidenavOpen)="sidenav.toggle()"></app-header>
+  
+      <!--  nav will go heare-->
+
+
+      <app-nav-tabs></app-nav-tabs>
+  
+  
+      <main>
+          <router-outlet></router-outlet>
+  
+      </main>
+  
+  
+    </mat-sidenav-content>
+  
+  
+  
+  </mat-sidenav-container>

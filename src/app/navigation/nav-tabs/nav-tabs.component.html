@@ -1,0 +1,37 @@
+
+
+<div class="navtab-container" fxLayout="row" fxLayoutAlign="center center">
+        <nav mat-tab-nav-bar mat-tab-nav-bar>
+        
+                <!-- <span class="toolbar-flex"></span> -->
+        
+                <a mat-tab-link routerLink="/" routerLinkActive #home="routerLinkActive"
+                [active]="home.isActive">Home</a>
+        
+                <a mat-tab-link routerLink="/accomodations/accomodations" routerLinkActive #accomodations="routerLinkActive"
+                [active]="accomodations.isActive">Accomodation</a>
+        
+                <a mat-tab-link routerLink="/food/food" routerLinkActive #food ="routerLinkActive"
+                [active]="food.isActive">Food Beverage</a>
+        
+        
+                <a mat-tab-link routerLink="/lifestyle/lifestyle" routerLinkActive #lifestyle="routerLinkActive"
+                [active]="lifestyle.isActive">LifeStyle</a>
+        
+        
+                <a mat-tab-link routerLink="/wedding/wedding" routerLinkActive #wedding="routerLinkActive"
+                [active]="wedding.isActive">Wedding</a>
+        
+        
+                <a mat-tab-link routerLink="/offers" routerLinkActive #offers="routerLinkActive"
+                [active]="offers.isActive">Offers</a>
+        
+        
+                <!-- <span class="toolbar-flex"></span> -->
+        
+        
+        </nav>
+        
+        </div>
+        
+        <router-outlet></router-outlet>
